@@ -1,0 +1,3072 @@
+<world> 
+    <camera> 
+        <position x="16" y="2" z="4" />
+        <lookAt x="0" y="0" z="0" />
+        <up x="0" y="1" z="0" />
+        <projection fov="45" near="0.0001" far="1000" />
+    </camera>
+    <group name="sistema_solar">
+    	<group name="sol">
+            <models> 
+                <model file="planet.3d" r="1" g="0.9" b="0" centerable="true"/>
+            </models>
+       
+            <group name="planetas"> 
+                <group name="orbitaMercurio">
+                    <transform>
+                        <rotation angle="1" x="1" y="0" z="0" />
+                        <rotation angle="0" x="0" y="1" z="0" />
+                    </transform>
+                    <group>
+                        <transform>
+                            <scale x="0.001725" y="0.001725" z="0.001725" />
+                        </transform>
+                        <models> 
+                            <model file="orbita_2.3d" r="0.8" g="0.8" b="0.8"/>
+                        </models>
+                    </group>
+                    <group name="mercurio">
+                        <transform>
+                            <position x="1.72" y="0" z="0" />
+                            <scale x="0.07" y="0.07" z="0.07" />
+                        </transform>
+                        <models> 
+                            <model file="planet.3d" r="0.5" g="0.5" b="0.5" centerable="true"/>
+                        </models>
+                    </group>
+                </group>
+
+                <group name="orbitaVenus">
+                    <transform>
+                        <rotation angle="-1" x="1" y="0" z="0" />
+                        <rotation angle="0" x="0" y="1" z="0" />
+                    </transform>
+                    <group>
+                        <transform>
+                            <scale x="0.002055" y="0.002055" z="0.002055" />
+                        </transform>
+                        <models> 
+                            <model file="orbita_2.3d" r="0.8" g="0.8" b="0.8"/>
+                        </models>
+                    </group>
+                    <group name="venus">
+                        <transform>
+                            <position x="2.05" y="0" z="0" />
+                            <scale x="0.1" y="0.1" z="0.1" />
+                        </transform>
+                        <models> 
+                            <model file="planet.3d" r="0.7" g="0.5" b="0.3" centerable="true"/>
+                        </models>
+                    </group>
+                </group>
+            
+                <group name="orbitaTerra">
+                    <transform>
+                        <rotation angle="0.8" x="1" y="0" z="0" />
+                        <rotation angle="0" x="0" y="1" z="0" />
+                    </transform>
+                    <group>
+                        <transform>
+                            <scale x="0.00285" y="0.00285" z="0.00285" />
+                        </transform>
+                        <models> 
+                            <model file="orbita_2.3d" r="0.8" g="0.8" b="0.8"/>
+                        </models>
+                    </group>
+                    <group name="terra">
+                        <transform>
+                            <position x="2.85" y="0" z="0" />
+                            <scale x="0.1" y="0.1" z="0.1" />
+                        </transform>
+                        <models> 
+                            <model file="planet.3d" r="0" g="0.5" b="0.5" centerable="true"/>
+                        </models>
+                        <group name="orbitaLuaDaTerra">
+                            <transform>
+                                <rotation angle="3" x="1" y="0" z="0" />
+                            </transform>
+                            <group>
+                                <transform>
+                                    <scale x="0.025" y="0.025" z="0.025" />
+                                </transform>
+                                <models> 
+                                    <model file="orbita_1.3d" r="0.8" g="0.8" b="0.8"/>
+                                </models>
+                            </group>
+                            <group name="luaDaTerra">
+                                <transform>
+                                    <position x="2.5" y="0" z="0" />
+                                    <scale x="0.25" y="0.25" z="0.25" />
+                                </transform>
+                                <models> 
+                                    <model file="planet.3d" r="0.41" g="0.41" b="0.41" centerable="true"/>
+                                </models>
+                            </group>
+                        </group>
+                    </group>
+                </group>
+                
+                <group name="orbitaMarte">
+                    <transform>
+                        <rotation angle="-0.8" x="1" y="0" z="0" />
+                        <rotation angle="0" x="0" y="1" z="0" />
+                    </transform>
+                    <group>
+                        <transform>
+                            <scale x="0.0034" y="0.0034" z="0.0034" />
+                        </transform>
+                        <models> 
+                            <model file="orbita_2.3d" r="0.8" g="0.8" b="0.8"/>
+                        </models>
+                    </group>
+                    <group name="marte">
+                        <transform>
+                            <position x="3.4" y="0" z="0" />
+                            <scale x="0.08" y="0.08" z="0.08" />
+                        </transform>
+                        <models> 
+                            <model file="planet.3d" r="0.6" g="0.4" b="0.2" centerable="true"/>
+                        </models>
+                    </group>
+                </group>
+
+                <group name="orbitaJupiter">
+                    <transform>
+                        <rotation angle="1" x="1" y="0" z="0" />
+                        <rotation angle="0" x="0" y="1" z="0" />
+                    </transform>
+                    <group>
+                        <transform>
+                            <scale x="0.006" y="0.006" z="0.006" />
+                        </transform>
+                        <models> 
+                            <model file="orbita_2.3d" r="0.8" g="0.8" b="0.8"/>
+                        </models>
+                    </group>
+                    <group name="jupiter">
+                        <transform>
+                            <position x="6" y="0" z="0" />
+                            <scale x="0.27" y="0.27" z="0.27" />
+                        </transform>
+                        <models> 
+                            <model file="planet.3d" r="0.7" g="0.7" b="0.5" centerable="true"/>
+                        </models>            
+                    </group>
+                </group>
+            
+                <group name="orbitaSaturno">
+                    <transform>
+                        <rotation angle="-1" x="1" y="0" z="0" />
+                        <rotation angle="0" x="0" y="1" z="0" />
+                    </transform>
+                    <group>
+                        <transform>
+                            <scale x="0.008" y="0.008" z="0.008" />
+                        </transform>
+                        <models>
+                            <model file="orbita_2.3d" r="0.8" g="0.8" b="0.8"/>
+                        </models>
+                    </group>
+                    <group name="saturno">
+                        <transform>
+                            <position x="8" y="0" z="0" />
+                            <scale x="0.22" y="0.22" z="0.22" />
+                        </transform>
+                        <models>
+                            <model file="planet.3d" r="0.65" g="0.5" b="0.25" centerable="true" />
+                        </models>
+                        <group name="anel_1">
+                            <transform>
+                                <rotation angle="5" x="1" y="0" z="0" />
+                                <scale x="0.6" y="0.05" z="0.6" />
+                            </transform>
+                            <models> 
+                                <model file="torus.3d" r="0.55" g="0.27" b="0.08" />
+                            </models>
+                        </group> 
+                        <group name="anel_2">
+                            <transform>
+                                <rotation angle="5" x="1" y="0" z="0" />
+                                <scale x="0.9" y="0.05" z="0.9" />
+                            </transform>
+                            <models>
+                                <model file="torus.3d" r="0.80" g="0.52" b="0.25" />
+                            </models>
+                        </group>   
+                    </group>
+                </group>
+            
+                <group name="orbitaUrano">
+                    <transform>
+                        <rotation angle="3" x="1" y="0" z="0" />
+                        <rotation angle="0" x="0" y="1" z="0" />
+                    </transform>
+                    <group>
+                        <transform>
+                            <scale x="0.01" y="0.01" z="0.01" />
+                        </transform>
+                        <models> 
+                            <model file="orbita_2.3d" r="0.8" g="0.8" b="0.8"/>
+                        </models>
+                    </group>
+                    <group name="urano">
+                        <transform>
+                            <position x="10" y="0" z="0" />
+                            <scale x="0.18" y="0.18" z="0.18" />
+                        </transform>
+                        <models> 
+                            <model file="planet.3d" r="0.2" g="0.2" b="0.4" centerable="true"/>
+                        </models>
+                    </group>
+                </group>
+            
+                <group name="orbitaNeptuno">
+                    <transform>
+                        <rotation angle="-1" x="1" y="0" z="0" />
+                        <rotation angle="0" x="0" y="1" z="0" />
+                    </transform>
+                    <group>
+                        <transform>
+                            <scale x="0.012" y="0.012" z="0.012" />
+                        </transform>
+                        <models> 
+                            <model file="orbita_2.3d" r="0.8" g="0.8" b="0.8"/>
+                        </models>
+                    </group>
+                    <group name="neptuno">
+                        <transform>
+                            <position x="12" y="0" z="0" />
+                            <scale x="0.14" y="0.14" z="0.14" />
+                        </transform>
+                        <models> 
+                            <model file="planet.3d" r="0.2" g="0.2" b="0.6" centerable="true"/>
+                        </models>
+                    </group>
+                </group>
+            </group> 
+
+            <group name="cintura_asteroides">
+                <group name="batch_1">
+                    <group name="grupo_1">
+                        <transform>
+                            <position x="0" y="0.1" z="0" />
+                            <rotation angle="10" x="0" y="1" z="0" /> 
+                            <rotation angle="0.3" x="1" y="0" z="0" />
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_2">
+                        <transform>
+                            <position x="0" y="-0.1" z="0" />
+                            <rotation angle="190" x="0" y="1" z="0" /> 
+                            <rotation angle="-0.3" x="1" y="0" z="0" />
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_3">
+                        <transform>
+                            <rotation angle="90" x="0" y="1" z="0" /> 
+                            <rotation angle="0.3" x="0" y="0" z="1" />
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_4">
+                        <transform>
+                            <rotation angle="270" x="0" y="1" z="0" /> 
+                            <rotation angle="-0.3" x="0" y="0" z="1" />
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_5">
+                        <transform>
+                            <rotation angle="45" x="0" y="1" z="0" /> 
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_6">
+                        <transform>
+                            <rotation angle="135" x="0" y="1" z="0" /> 
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_7">
+                        <transform>
+                            <rotation angle="225" x="0" y="1" z="0" /> 
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_8">
+                        <transform>
+                            <rotation angle="315" x="0" y="1" z="0" /> 
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                </group>
+                <group name="batch_2">
+                    <transform>
+                        <rotation angle="25" x="0" y="1" z="0" />
+                    </transform>
+                    <group name="grupo_1">
+                        <transform>
+                            <position x="0" y="0.1" z="0" />
+                            <rotation angle="10" x="0" y="1" z="0" /> 
+                            <rotation angle="0.3" x="1" y="0" z="0" />
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_2">
+                        <transform>
+                            <position x="0" y="-0.1" z="0" />
+                            <rotation angle="190" x="0" y="1" z="0" /> 
+                            <rotation angle="-0.3" x="1" y="0" z="0" />
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_3">
+                        <transform>
+                            <rotation angle="90" x="0" y="1" z="0" /> 
+                            <rotation angle="0.3" x="0" y="0" z="1" />
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_4">
+                        <transform>
+                            <rotation angle="270" x="0" y="1" z="0" /> 
+                            <rotation angle="-0.3" x="0" y="0" z="1" />
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_5">
+                        <transform>
+                            <rotation angle="45" x="0" y="1" z="0" /> 
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_6">
+                        <transform>
+                            <rotation angle="135" x="0" y="1" z="0" /> 
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_7">
+                        <transform>
+                            <rotation angle="225" x="0" y="1" z="0" /> 
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                    <group name="grupo_8">
+                        <transform>
+                            <rotation angle="315" x="0" y="1" z="0" /> 
+                        </transform>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="10" x="0" y="1" z="0" />
+                                <position x="5" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="20" x="0" y="1" z="0" />
+                                <position x="4.3" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="30" x="0" y="1" z="0" />
+                                <position x="4.2" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="40" x="0" y="1" z="0" />
+                                <position x="4.657" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="50" x="0" y="1" z="0" />
+                                <position x="4.96" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="60" x="0" y="1" z="0" />
+                                <position x="4.2345" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="70" x="0" y="1" z="0" />
+                                <position x="4.13" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="80" x="0" y="1" z="0" />
+                                <position x="4.0132" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="90" x="0" y="1" z="0" />
+                                <position x="4.34" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="100" x="0" y="1" z="0" />
+                                <position x="4.678" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="110" x="0" y="1" z="0" />
+                                <position x="4.459" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="120" x="0" y="1" z="0" />
+                                <position x="4.87" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="130" x="0" y="1" z="0" />
+                                <position x="4.32" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="140" x="0" y="1" z="0" />
+                                <position x="4.29" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="150" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                        <group>
+                            <transform>
+                                <rotation angle="160" x="0" y="1" z="0" />
+                                <position x="4.73" y="0" z="0" />
+                                <scale x="0.01" y="0.01" z="0.01" />
+                            </transform>
+                            <models>
+                                <model file="asteroid.3d" r="0.5" g="0.5" b="0.5" />
+                            </models>
+                        </group>
+                    </group>
+                </group>
+            </group>
+            
+        </group>
+    </group>
+</world>

@@ -1,0 +1,236 @@
+<world> 
+    <camera> 
+        <position x="4" y="1" z="1.5" />
+        <lookAt x="0" y="0" z="0" />
+        <up x="0" y="0" z="1" />
+        <projection fov="45" near="0.1" far="1000" />
+    </camera>
+    <group> 
+    	<group name="sol">
+    	   <transform>
+                <position x="0" y="0" z="0" />
+                <rotation angle="0" x="0" y="0" z="0" />
+                <scale x="0.7" y="0.7" z="0.7" />
+            </transform>
+            <models> 
+                <model file="sphere.3d" r="1" g="0.9" b="0" centerable="true"/>
+            </models>
+        </group>
+        <group> 
+            <group name="orbitaMercurio">
+                <transform>
+                    <position x="0" y="0" z="0" />
+                    <rotation angle="15" x="0" y="1" z="0" />
+                    <scale x="0.01725" y="0.01725" z="0.01725" />
+                </transform>
+                <models> 
+                    <model file="orbita.3d" r="0.8" g="0.8" b="0.8"/>
+                </models>
+            </group>
+            <group name="mercurio">
+                <transform>
+                    <position x="1.2" y="1.2" z="-0.3" />
+                    <rotation angle="0" x="0" y="0" z="0" />
+                    <scale x="0.07" y="0.07" z="0.07" />
+                </transform>
+                <models> 
+                    <model file="sphere.3d" r="0.5" g="0.5" b="0.5" centerable="true"/>
+                </models>
+            </group>
+        </group>
+        <group> 
+            <group name="orbitaVenus">
+                <transform>
+                    <position x="0" y="0" z="0" />
+                    <rotation angle="13" x="1" y="0" z="1" />
+                    <scale x="0.02055" y="0.02055" z="0.02055" />
+                </transform>
+                <models> 
+                    <model file="orbita.3d" r="0.8" g="0.8" b="0.8"/>
+                </models>
+            </group>
+            <group name="venus">
+                <transform>
+                    <position x="-1.5" y="1.4" z="0.3" />
+                    <rotation angle="0" x="0" y="0" z="0" />
+                    <scale x="0.1" y="0.1" z="0.1" />
+                </transform>
+                <models> 
+                    <model file="sphere.3d" r="0.7" g="0.5" b="0.3" centerable="true"/>
+                </models>
+            </group>
+        </group>
+        <group> 
+            <group name="orbitaTerra">
+                <transform>
+                    <position x="0" y="0" z="0" />
+                    <rotation angle="0" x="0" y="0" z="0" />
+                    <scale x="0.0285" y="0.0285" z="0.0285" />
+                </transform>
+                <models> 
+                    <model file="orbita.3d" r="0.8" g="0.8" b="0.8"/>
+                </models>
+            </group>
+            <group name="terra">
+                <transform>
+                    <position x="2" y="-2" z="0" />
+                    <rotation angle="0" x="0" y="0" z="0" />
+                    <scale x="0.1" y="0.1" z="0.1" />
+                </transform>
+                <models> 
+                    <model file="sphere.3d" r="0" g="0.5" b="0.5" centerable="true"/>
+                </models>
+                <group name="orbitaLuaDaTerra">
+                <transform>
+                    <position x="0" y="0" z="0" />
+                    <rotation angle="0" x="0" y="0" z="0" />
+                    <scale x="0.03" y="0.03" z="0.03" />
+                </transform>
+                <models> 
+                    <model file="orbita.3d" r="0.8" g="0.8" b="0.8"/>
+                </models>
+            </group>
+                <group name="luaDaTerra">
+                <transform>
+                    <position x="0.03" y="0.3" z="0" />
+                    <rotation angle="0" x="0" y="0" z="0" />
+                    <scale x="0.25" y="0.25" z="0.25" />
+                </transform>
+                <models> 
+                    <model file="sphere.3d" r="0.41" g="0.41" b="0.41" centerable="true"/>
+                </models>
+            </group>
+            </group>
+        </group>
+        <group> 
+            <group name="orbitaMarte">
+                <transform>
+                    <position x="0" y="0" z="0" />
+                    <rotation angle="2.5" x="0" y="1" z="0" />
+                    <scale x="0.032" y="0.032" z="0.032" />
+                </transform>
+                <models> 
+                    <model file="orbita.3d" r="0.8" g="0.8" b="0.8"/>
+                </models>
+            </group>
+            <group name="marte">
+                <transform>
+                    <position x="2.2" y="2.3" z="-0.1" />
+                    <rotation angle="0" x="0" y="0" z="0" />
+                    <scale x="0.08" y="0.08" z="0.08" />
+                </transform>
+                <models> 
+                    <model file="sphere.3d" r="0.6" g="0.4" b="0.2" centerable="true"/>
+                </models>
+            </group>
+        </group>  
+        <group> 
+            <group name="orbitaJupiter">
+                <transform>
+                    <position x="0" y="0" z="0" />
+                    <rotation angle="2.5" x="0" y="1" z="0" />
+                    <scale x="0.0580" y="0.0580" z="0.0580" />
+                </transform>
+                <models> 
+                    <model file="orbita.3d" r="0.8" g="0.8" b="0.8"/>
+                </models>
+            </group>
+            <group name="jupiter">
+                <transform>
+                    <position x="-5.0" y="3" z="0.2" />
+                    <rotation angle="0" x="0" y="0" z="0" />
+                    <scale x="0.25" y="0.25" z="0.25" />
+                </transform>
+                <models> 
+                    <model file="sphere.3d" r="0.7" g="0.7" b="0.5" centerable="true"/>
+                </models>            
+            </group>
+        </group>
+        <group> 
+            <group name="orbitaSaturno">
+                <transform>
+                    <position x="0" y="0" z="0" />
+                    <rotation angle="0" x="0" y="0" z="0" />
+                    <scale x="0.0665" y="0.0665" z="0.0665" />
+                </transform>
+                <models> 
+                    <model file="orbita.3d" r="0.8" g="0.8" b="0.8"/>
+                </models>
+            </group>
+            <group name="saturno">
+                <transform>
+                    <position x="-5.75" y="-3.3" z="0.05" />
+                    <rotation angle="0" x="0" y="0" z="0" />
+                    <scale x="0.22" y="0.22" z="0.22" />
+                </transform>
+                <models> 
+                    <model file="sphere.3d" r="0.8" g="0.7" b="0.6" centerable="true"/>
+                </models>
+                <group name="anel2">
+                    <transform>
+                        <position x="0" y="0" z="0" />
+                        <rotation angle="15" x="0" y="1" z="0" />
+                        <scale x="0.75" y="0.75" z="0.005" />
+                    </transform>
+                    <models> 
+                        <model file="torus.3d" r="0.55" g="0.27" b="0.08"/>
+                    </models>
+                </group> 
+                <group name="anel3">
+                    <transform>
+                        <position x="0" y="0" z="0" />
+                        <rotation angle="15" x="0" y="1" z="0" />
+                        <scale x="1" y="1" z="0.005" />
+                    </transform>
+                    <models> 
+                        <model file="torus.3d" r="0.80" g="0.52" b="0.25"/>
+                    </models>
+                </group>   
+            </group>
+        </group> 
+        <group> 
+            <group name="orbitaUrano">
+                <transform>
+                    <position x="0" y="0" z="0" />
+                    <rotation angle="2.5" x="0" y="1" z="0" />
+                    <scale x="0.0715" y="0.0715" z="0.0715" />
+                </transform>
+                <models> 
+                    <model file="orbita.3d" r="0.8" g="0.8" b="0.8"/>
+                </models>
+            </group>
+            <group name="urano">
+                <transform>
+                    <position x="6.0" y="-4" z="-0.25" />
+                    <rotation angle="0" x="0" y="0" z="0" />
+                    <scale x="0.18" y="0.18" z="0.18" />
+                </transform>
+                <models> 
+                    <model file="sphere.3d" r="0.2" g="0.2" b="0.4" centerable="true"/>
+                </models>
+            </group>
+        </group>
+        <group> 
+            <group name="orbitaNeptuno">
+                <transform>
+                    <position x="0" y="0" z="0" />
+                    <rotation angle="1.0" x="0" y="1" z="0" />
+                    <scale x="0.0765" y="0.0765" z="0.0765" />
+                </transform>
+                <models> 
+                    <model file="orbita.3d" r="0.8" g="0.8" b="0.8"/>
+                </models>
+            </group>
+            <group name="neptuno">
+                <transform>
+                    <position x="-6.4" y="4.2" z="0.1" />
+                    <rotation angle="0" x="0" y="0" z="0" />
+                    <scale x="0.14" y="0.14" z="0.14" />
+              </transform>
+                <models> 
+                    <model file="sphere.3d" r="0.2" g="0.2" b="0.6" centerable="true"/>
+                </models>
+            </group>
+        </group>    
+    </group>
+</world>
